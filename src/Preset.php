@@ -16,6 +16,7 @@ class Preset extends BasePreset
         static::updateWebpackConfiguration();
         static::updateJavaScript();
         static::updateTemplates();
+        static::addLangs();
         static::removeNodeModules();
         static::updateGitignore();
     }
@@ -67,6 +68,17 @@ class Preset extends BasePreset
             $files->delete(resource_path('views/home.blade.php'));
             $files->delete(resource_path('views/welcome.blade.php'));
             $files->copyDirectory(__DIR__ . '/stubs/views', resource_path('views'));
+        });
+    }
+
+    protected static function addLangs()
+    {
+        tap(new Filesystem, function ($files) {
+            if (!$files->isDirectory($directory = resource_path('lang/it'))) {
+                $files->makeDirectory($directory, 0755, true);
+            }
+
+            $files->copyDirectory(__DIR__ . '/stubs/lang/it', resource_path('lang/it'));
         });
     }
 
