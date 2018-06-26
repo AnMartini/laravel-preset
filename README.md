@@ -1,6 +1,6 @@
-# 🚀 Adam Wathan's Laravel Frontend Preset
+# 🚀 Andrea Martini's Laravel Preset
 
-A Laravel frontend preset that scaffolds out new applications just the way I like 'em 👌🏻
+A Laravel preset that scaffolds out new applications just the way I like 'em 👌🏻
 
 What it includes:
 
@@ -12,6 +12,7 @@ What it includes:
 - Adds compiled assets to `.gitignore`
 - Adds a simple Tailwind-tuned default layout template
 - Replaces the `welcome.blade.php` template with one that extends the main layout
+- Add Italian lang files
 
 ## Installation
 
@@ -21,7 +22,7 @@ This package isn't on Packagist (yet), so to get started, add it as a repository
 "repositories": [
     {
         "type": "vcs",
-        "url": "https://github.com/adamwathan/laravel-preset"
+        "url": "https://github.com/anmartini/laravel-preset"
     }
 ]
 ```
@@ -29,16 +30,16 @@ This package isn't on Packagist (yet), so to get started, add it as a repository
 Next, run this command to add the preset to your project:
 
 ```
-composer require adamwathan/laravel-preset --dev
+composer require anmartini/laravel-preset --dev
 ```
 
 Finally, apply the scaffolding by running:
 
 ```
-php artisan preset nothingworks
+php artisan preset anmartini
 ```
 
-> What's `nothingworks`? NothingWorks Inc. is the absurd name I chose for my business, where I create products like [Refactoring to Collections](https://adamwathan.me/refactoring-to-collections/) and [Test-Driven Laravel](https://course.testdrivenlaravel.com/) 😄
+> This package is forked from [Adam Wathan's Laravel Frontend Preset](https://github.com/adamwathan/laravel-preset)
 
 
 
