@@ -41,6 +41,18 @@ return [
     'exists' => 'Il :attribute scelto non è valido.',
     'file' => 'Il campo :attribute deve essere un file.',
     'filled' => 'Il campo :attribute è richiesto.',
+    'gt' => [
+        'numeric' => 'Il campo :attribute deve essere maggiore di :value.',
+        'file' => 'Il file :attribute deve pesare più di :value kilobytes.',
+        'string' => 'Il campo :attribute deve avere più di :value caratteri.',
+        'array' => 'Il campo :attribute deve avere più di :value elementi.',
+    ],
+    'gte' => [
+        'numeric' => 'Il campo :attribute deve essere maggiore o uguale a :value.',
+        'file' => 'Il file :attribute deve pesare almeno :value kilobytes.',
+        'string' => 'Il campo :attribute deve avere almeno :value caratteri.',
+        'array' => 'Il campo :attribute deve avere almeno :value elementi.',
+    ],
     'image' => "Il campo :attribute deve essere un'immagine.",
     'in' => 'Il :attribute scelto non è valido.',
     'in_array' => ':attribute non esiste in :other.',
@@ -49,6 +61,18 @@ return [
     'ipv4' => 'Il campo :attribute deve essere un indirizzo IPv4 valido.',
     'ipv6' => 'Il campo :attribute deve essere un indirizzo IPv6 valido.',
     'json' => 'Il campo :attribute deve essere una stringa JSON valida.',
+    'lt' => [
+        'numeric' => 'Il campo :attribute deve essere minore di :value.',
+        'file' => 'Il file :attribute deve pesare meno di :value kilobytes.',
+        'string' => 'Il campo :attribute deve avere meno di :value caratteri.',
+        'array' => 'Il campo :attribute deve avere meno di :value elementi.',
+    ],
+    'lte' => [
+        'numeric' => 'Il campo :attribute deve essere minore o uguale a :value.',
+        'file' => 'Il file :attribute deve pesare al massimo :value kilobytes.',
+        'string' => 'Il campo :attribute deve avere al massimo :value caratteri.',
+        'array' => 'Il campo :attribute deve avere al massimo :value elementi.',
+    ],
     'max' => [
         'numeric' => 'Il campo :attribute non può essere maggiore di :max.',
         'file' => 'Il file :attribute non può pesare più di :max kilobytes.',
@@ -64,6 +88,7 @@ return [
         'array' => 'Il campo :attribute deve avere almeno :min elementi.',
     ],
     'not_in' => 'Il :attribute scelto non è valido.',
+    'not_regex' => 'Il formato del campo :attribute non è valido.',
     'numeric' => 'Il campo :attribute deve essere un numero.',
     'present' => 'Il campo :attribute deve essere presente.',
     'regex' => 'Il formato del campo :attribute non è valido.',
@@ -86,9 +111,6 @@ return [
     'unique' => 'Il campo :attribute è già utilizzato.',
     'uploaded' => "L'upload di :attribute è fallito.",
     'url' => 'Il formato del campo :attribute non è valido.',
-    'sum' => 'La somma di :attribute deve essere maggiore o uguale a :field.',
-    'greater_than_field' => ':attribute deve essere maggiore di :field',
-    'empty' => 'Il campo :attribute deve essere vuoto',
 
     /*
     |--------------------------------------------------------------------------
