@@ -1,6 +1,7 @@
 <?php
 
 return [
+    
     /*
     |--------------------------------------------------------------------------
     | Validation Language Lines
@@ -31,6 +32,7 @@ return [
     'boolean' => 'Il campo :attribute deve essere vero o falso.',
     'confirmed' => 'La conferma del campo :attribute non corrisponde.',
     'date' => 'Il campo :attribute non è una data valida.',
+    'date_equals' => 'Il campo :attribute deve essere una data uguale a :date.',
     'date_format' => 'Il campo :attribute non rispetta il formato :format.',
     'different' => 'Il campo :attribute e il campo :other devono essere diversi.',
     'digits' => 'Il campo :attribute deve avere :digits cifre.',
@@ -106,11 +108,13 @@ return [
         'string' => 'Il campo :attribute deve avere :size caratteri.',
         'array' => 'Il campo :attribute deve avere :size elementi.',
     ],
+    'starts_with' => 'Il campo :attribute deve iniziare con: :values',
     'string' => 'Il campo :attribute deve essere una stringa.',
     'timezone' => 'Il campo :attribute deve essere una zona temporale valida.',
     'unique' => 'Il campo :attribute è già utilizzato.',
     'uploaded' => "L'upload di :attribute è fallito.",
     'url' => 'Il formato del campo :attribute non è valido.',
+    'uuid' => 'Il campo :attribute deve essere un UUID valido.',
 
     /*
     |--------------------------------------------------------------------------
