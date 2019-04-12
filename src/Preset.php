@@ -80,6 +80,8 @@ class Preset extends BasePreset
 
             $files->copyDirectory(__DIR__ . '/stubs/lang/it', resource_path('lang/it'));
         });
+        
+        copy(__DIR__ . '/stubs/lang/it.json', resource_path('lang/it.json'));
     }
 
     protected static function updateGitignore()
