@@ -24,10 +24,10 @@ class Preset extends BasePreset
     protected static function updatePackageArray(array $packages)
     {
         return array_merge([
-            'laravel-mix-purgecss' => '^2.2.0',
-            'postcss-nesting' => '^5.0.0',
-            'postcss-import' => '^11.1.0',
-            'tailwindcss' => '>=0.5.3',
+            'laravel-mix-purgecss' => '^4.1.0',
+            'postcss-nesting' => '^7.0.0',
+            'postcss-import' => '^12.0.1',
+            'tailwindcss' => '^1.0.0',
         ], Arr::except($packages, [
             'bootstrap',
             'bootstrap-sass',
